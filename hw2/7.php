@@ -5,9 +5,9 @@
 <?php
     function tellTime() {
         $hours = date('h');
-        $minutes = date('m');
+        $minutes = date('i');
         
-        $date = $hours . checkTime($hours, "hour") . ":" . $minutes . checkTime($minutes, "minute");
+        $date = $hours . checkTime($hours, "hour") . " " . $minutes . checkTime($minutes, "minute");
         return $date;
     }
 
